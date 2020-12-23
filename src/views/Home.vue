@@ -11,11 +11,13 @@ body {
 }
 
 #map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 500px;
-  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -400px;
+  width: 800px;
+  height: 500px;
 }
 </style>
 
@@ -105,6 +107,7 @@ export default {
       .setPopup(popup) // sets a popup on this marker
       .addTo(map);
   },
+
   methods: {},
 };
 </script>
